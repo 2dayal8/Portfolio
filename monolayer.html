@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Monolayer Deposition System | Aryan Dayal</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="project-page">
+
+    <a class="back-link" href="index.html">← Back to Projects</a>
+
+    <header class="project-header">
+
+      <p class="project-label">Mechanical Design · Prototyping · Research</p>
+
+      <h1>Monolayer Deposition System</h1>
+
+      <p class="project-intro">
+        A custom experimental system designed to improve the repeatability
+        and scalability of microscale particle monolayer deposition.
+      </p>
+
+    </header>
+
+    <img
+      class="project-hero-image"
+      src="images/monolayer-system.jpg"
+      alt="Physical monolayer deposition system"
+    >
+
+    <section class="project-text">
+
+      <p class="section-label">THE CHALLENGE</p>
+
+      <h2>Why I built it</h2>
+
+      <p>
+        My research required large, uniform monolayers of microscale particles
+        for subsequent fabrication and experimental testing. The existing
+        deposition process relied heavily on manual control, making consistency
+        across samples difficult to maintain.
+      </p>
+
+      <p>
+        I developed a custom system to better control the motion and positioning
+        of the deposition process. The goal was to create a more repeatable
+        experimental platform while preserving the flexibility needed to test
+        different operating conditions.
+      </p>
+
+      <p>
+        The geometry was intentionally kept simple, particularly for the slide
+        hanger, so that components could be rapidly fabricated, tested, and modified
+        as the experimental requirements evolved.
+    </p>
+
+    </section>
+
+    <section class="project-text">
+
+      <p class="section-label">DESIGN</p>
+
+      <h2>Designing around the deposition process</h2>
+
+      <p>
+        Initial testing was used to identify the slide angle that produced the
+        most consistent monolayer deposition. That result became the primary
+        design constraint for the system, driving the angle of the slide hanger,
+        the height of the base, and the positioning of the components relative
+        to the motorized linear stage.
+      </p>
+
+      <p>
+        The base was designed to mount directly onto the motorized micrometer
+        stage and includes a recessed seat for the deposition slide. The recess
+        improves stability while also limiting evaporation from the slide edges,
+        reducing external flows that can disrupt the capillary forces required
+        for successful particle deposition.
+      </p>
+
+    </section>
+
+    <div class="cad-grid">
+
+      <figure>
+        <img
+          src="images/monolayer-CAD.jpg"
+          alt="CAD drawing of the motorized stage base"
+        >
+
+        <figcaption>
+          Motorized stage base designed to interface with the linear stage,
+          position the deposition slide, and reduce edge-driven evaporation.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/monolayer-drawing.jpg"
+          alt="CAD drawing of the angled slide hanger"
+        >
+
+        <figcaption>
+          Angled slide hanger designed around the experimentally selected
+          deposition angle to hold and translate the upper slide.
+        </figcaption>
+      </figure>
+
+    </div>
+
+    <section class="project-text">
+
+      <p class="section-label">PROTOTYPING</p>
+
+      <h2>Choosing the right process for each component</h2>
+
+      <p>
+        The components were fabricated using different additive manufacturing
+    processes based on their functional requirements. The base was produced
+    using conventional FDM printing, which provided sufficient accuracy for
+    mounting and positioning the motorized linear stage.
+      </p>
+
+      <p>
+       The slide hanger required tighter dimensional control, particularly at the
+    1–1.2 mm slide-holding feature. I fabricated the hanger in Clear Resin using
+    a Formlabs Form 3/3+ printer, where the higher resolution was better suited
+    to reliably producing the thin geometry required by the design.
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

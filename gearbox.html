@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Stage Gearbox | Aryan Dayal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="project-page">
+
+    <a class="back-link" href="index.html">← Back to Projects</a>
+
+    <header class="project-header">
+      <p class="project-label">MACHINE DESIGN · SHAFT ANALYSIS · CAD DRAWINGS</p>
+
+      <h1>Two-Stage Spur Gearbox Design</h1>
+
+      <p class="project-intro">
+        A two-stage spur gear transmission designed for an electric go-kart, reducing motor speed
+        from 10,000 rpm to 500 rpm while transmitting torque through a shaft, bearing, key, and gear system.
+      </p>
+    </header>
+
+    <img
+      class="project-hero-image"
+      src="images/gearbox-assembly-drawing.png"
+      alt="Two-stage gearbox assembly drawing"
+    >
+
+    <section class="project-text">
+      <p class="section-label">THE CHALLENGE</p>
+      <h2>Designing a compact transmission system</h2>
+
+      <p>
+        The objective was to design a reliable two-stage spur gear transmission for an electric go-kart.
+        The system needed to achieve a 20:1 speed reduction, converting 10,000 rpm at the motor to
+        500 rpm at the wheel.
+      </p>
+
+      <p>
+        The design balanced gear ratio distribution, catalog gear selection, shaft sizing, bearing
+        placement, keyway geometry, retaining rings, and manufacturability constraints.
+      </p>
+    </section>
+
+    <section class="project-text">
+      <p class="section-label">GEAR SELECTION</p>
+      <h2>Splitting the reduction across two stages</h2>
+
+      <p>
+        I selected a 4:1 reduction for the first stage and a 5:1 reduction for the second stage.
+        This avoided extreme loading on a single mesh and helped maintain a more practical gearbox depth.
+      </p>
+
+      <p>
+        The finalized gear set used 20, 80, 25, and 125 teeth, with 1045 carbon steel gears and
+        induction hardening considered for improved durability.
+      </p>
+    </section>
+
+    <section class="project-text">
+      <p class="section-label">SHAFT DESIGN</p>
+      <h2>Designing the intermediate shaft</h2>
+
+      <p>
+        The intermediate shaft was analyzed under combined bending and torsional loading from the two
+        gear meshes. Bearing reactions, shear force, bending moment, and torque diagrams were used to
+        locate critical stress regions.
+      </p>
+
+      <p>
+        The shaft incorporated shoulders, keyways, retaining ring grooves, spacers, and fillets to support
+        load transfer, axial positioning, and manufacturability.
+      </p>
+    </section>
+
+    <div class="cad-grid">
+      <figure>
+        <img src="images/gearbox-shaft-drawing.png" alt="Intermediate shaft CAD drawing">
+        <figcaption>
+          Intermediate shaft drawing showing shoulders, keyways, retaining ring grooves, fillets, and dimensions.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/gearbox-assembly-drawing.png" alt="Gearbox assembly CAD drawing">
+        <figcaption>
+          Full shaft assembly drawing showing gear, bearing, spacer, and shaft layout.
+        </figcaption>
+      </figure>
+    </div>
+
+    <section class="project-text">
+      <p class="section-label">VALIDATION</p>
+      <h2>Checking strength and fatigue performance</h2>
+
+      <p>
+        The design was validated using Goodman fatigue analysis at significant shaft locations, including
+        shoulders, retaining ring grooves, and keyways.
+      </p>
+
+      <p>
+        The most critical location was the keyway on the Gear 3 side, where the selected shaft diameter
+        exceeded the required Goodman minimum diameter. All major shaft locations passed the diameter
+        verification checks.
+      </p>
+    </section>
+
+  </main>
+</body>
+</html>
